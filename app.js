@@ -149,22 +149,39 @@ document.addEventListener('DOMContentLoaded', () => {
             serviceTypeInput.closest('.form-group').classList.remove('invalid');
         }
 
-        if (!dateVal) {
-            appointmentDateInput.closest('.form-group').classList.add('invalid');
-            isValid = false;
-        } else {
-            const selectedDate = new Date(dateVal + 'T00:00:00');
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
+        // if (!dateVal) {
+        //     appointmentDateInput.closest('.form-group').classList.add('invalid');
+        //     isValid = false;
+        // } else {
+        //     const selectedDate = new Date(dateVal + 'T00:00:00');
+        //     const today = new Date();
+        //     today.setHours(0, 0, 0, 0);
 
-            if (selectedDate < today) {
-                appointmentDateInput.closest('.form-group').classList.add('invalid');
-                document.getElementById('dateError').textContent = 'Appointments cannot be booked in the past.';
-                isValid = false;
-            } else {
-                appointmentDateInput.closest('.form-group').classList.remove('invalid');
-            }
-        }
+        //     if (selectedDate < today) {
+        //         appointmentDateInput.closest('.form-group').classList.add('invalid');
+        //         document.getElementById('dateError').textContent = 'Appointments cannot be booked in the past.';
+        //         isValid = false;
+        //     } else {
+        //         appointmentDateInput.closest('.form-group').classList.remove('invalid');
+        //     }
+        // }
+        if (!dateVal) {
+    appointmentDateInput.closest('.form-group').classList.add('invalid');
+    isValid = false;
+} else {
+    const selectedDateTime = new Date(`${dateVal}T${timeVal}:00`);
+    const now = new Date();
+
+    if (selectedDateTime < now) {
+        appointmentDateInput.closest('.form-group').classList.add('invalid');
+        document.getElementById('dateError').textContent =
+            'Appointments cannot be booked in the past.';
+        isValid = false;
+    } else {
+        appointmentDateInput.closest('.form-group').classList.remove('invalid');
+        document.getElementById('dateError').textContent = '';
+    }
+}
 
         if (!timeVal) {
             appointmentTimeInput.closest('.form-group').classList.add('invalid');
@@ -260,8 +277,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const list = getFilteredAndSortedAppointments();
 
         const now = new Date();
-        const upcomingList = appointments.filter(app => new Date(`${app.date}T${app.time}`) >= now);
-        upcomingCountEl.textContent = upcomingList.length;
+        // const upcomingList = appointments.filter(app => new Date(`${app.date}T${app.time}`) >= now);
+        // upcomingCountEl.textContent = upcomingList.length;
+        const upcomingList = appointments.filter(app => {
+    const appointmentDateTime = new Date(
+        `${app.date}T${app.time}`
+    );
+
+    return appointmentDateTime >= now;
+});
+
+upcomingCountEl.textContent = upcomingList.length;
+
 
         if (list.length === 0) {
             appointmentsCardGrid.classList.add('d-none');
