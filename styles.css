@@ -1019,7 +1019,7 @@ margin-bottom: 1%; }
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.85rem;
 }
 

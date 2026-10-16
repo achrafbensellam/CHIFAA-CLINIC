@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
            const nameRegex = /^[A-Za-z\u00C0-\u00FF\u0600-\u06FF]+(\s[A-Za-z\u00C0-\u00FF\u0600-\u06FF]+)*$/;
            const numregex = [0-9]; 
 
-        if (!nameVal || nameVal.length < 2 || !nameRegex.test(nameVal) || numregex.test(nameVal)) {
+        if (!nameVal || nameVal.length < 2 || !nameRegex.test(nameVal)) {
             customerNameInput.closest('.form-group').classList.add('invalid');
             isValid = false;
         } else {
