@@ -77,10 +77,16 @@ main {
 
 .bg-light { background-color: #f1f5f9; }
 .bg-white { background-color: #ffffff; }
-.bg-primary-light { background-color: var(--primary-light); }
+.bg-primary-light { background-color: var(--primary-light); 
+padding: 1%;
+border-radius: 5px;
+margin-bottom: 1%;}
 .bg-success-light { background-color: var(--success-light); }
 .bg-warning-light { background-color: var(--warning-light); }
-.bg-danger-light { background-color: var(--danger-light); }
+.bg-danger-light { background-color: var(--danger-light);
+padding: 1%;
+border-radius: 5px;
+margin-bottom: 1%; }
 .bg-gradient { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
 
 .d-flex { display: flex; }
