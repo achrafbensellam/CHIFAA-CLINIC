@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifaa Clinic - Premium Appointment Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Glassmorphism Navigation Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" data-target="landing">
+                <div class="logo-badge">
+                    <svg class="logo-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="22" r="14" fill="#E11D48"/>
+                        <circle cx="100" cy="178" r="14" fill="#E11D48"/>
+                        <circle cx="22" cy="100" r="14" fill="#E11D48"/>
+                        <circle cx="178" cy="100" r="14" fill="#E11D48"/>
+                        <path d="M100 45 C 80 45, 65 70, 92 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 92 C 135 70, 120 45, 100 45 Z" fill="#E11D48"/>
+                        <path d="M100 155 C 80 155, 65 130, 92 108 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 108 C 135 130, 120 155, 100 155 Z" fill="#E11D48"/>
+                        <path d="M45 100 C 45 80, 70 65, 92 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 92 108 C 70 135, 45 120, 45 100 Z" fill="#E11D48"/>
+                        <path d="M155 100 C 155 80, 130 65, 108 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 108 C 130 135, 155 120, 155 100 Z" fill="#E11D48"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Shifaa <span class="brand-sub">Clinic</span></span>
+                    <span class="brand-tagline">Healthcare Management</span>
+                </div>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="#hero" class="nav-link active" data-target="landing"><i class="fa-solid fa-house-medical"></i> Home</a>
+                <a href="#services" class="nav-link" data-target="landing"><i class="fa-solid fa-stethoscope"></i> Specializations</a>
+                <a href="#features" class="nav-link" data-target="landing"><i class="fa-solid fa-sparkles"></i> Capabilities</a>
+                <button class="btn btn-primary nav-cta" id="goToAppBtn">
+                    <span>Launch Manager</span> <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- LANDING PAGE VIEW -->
+        <section id="landingView" class="view-section active">
+            <!-- Hero Section with Glowing Accents -->
+            <section id="hero" class="hero-section">
+                <div class="hero-bg-glow glow-1"></div>
+                <div class="hero-bg-glow glow-2"></div>
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="pill-badge">
+                            <span class="pill-dot"></span>
+                            <i class="fa-solid fa-shield-heart"></i> Next-Gen Medical Operations
+                        </div>
+                        <h1>Excellence & Precision in Patient Scheduling</h1>
+                        <p>Streamline clinic consultations with zero overlap. Shifaa Clinic’s intelligent appointment suite gives medical receptionists and doctors complete control over everyday patient flow.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg glow-effect" id="tryToolHeroBtn">
+                                <i class="fa-solid fa-calendar-check"></i> Try Manager Tool Now
+                            </button>
+                            <a href="#services" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-circle-play"></i> Explore Services
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-circle-check text-success"></i></div>
+                                <div>
+                                    <strong>100%</strong>
+                                    <span>Conflict-Free</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-database text-primary"></i></div>
+                                <div>
+                                    <strong>Local</strong>
+                                    <span>Instant Storage</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-bolt text-warning"></i></div>
+                                <div>
+                                    <strong>Realtime</strong>
+                                    <span>Search & Filter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-img-card">
+                            <div class="img-header-bar">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="header-title"><i class="fa-solid fa-hospital"></i> Shifaa Medical Facility</span>
+                            </div>
+                            <div class="hero-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Shifaa Clinic Environment" class="hero-clinic-img">
+                                <div class="hero-img-overlay-badge">
+                                    <div class="badge-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <div class="badge-text">
+                                        <strong>Live Scheduler Active</strong>
+                                        <small><i class="fa-solid fa-lock"></i> Browser Local Storage Persistence</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Value Proposition Section -->
+            <section class="value-prop-section container">
+                <div class="section-header text-center">
+                    <span class="sub-title">CORE ADVANTAGES</span>
+                    <h2>Engineered for Seamless Clinic Management</h2>
+                    <p>Designed to reduce administrative friction and deliver an effortless user experience for healthcare personnel.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="feature-box card">
+                        <div class="icon-wrap bg-primary-light text-primary">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <h3>Instant Scheduling</h3>
+                        <p>Book patients in under 5 seconds with precise form input validation and automated timeline sorting.</p>
+                    </div>
+                    <div class="feature-box card">
+                        <div class="icon-wrap bg-warning-light text-warning">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3>Smart Conflict Guard</h3>
+                        <p>Avoid double-booking errors. The engine instantly detects date & time collisions before saving.</p>
+                    </div>
+                    <div class="feature-box card">
+                        <div class="icon-wrap bg-success-light text-success">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>100% Offline Session</h3>
+                        <p>Your records persist safely inside browser LocalStorage without needing paid backend APIs or server dependencies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Specializations Services Grid -->
+            <section id="services" class="services-section bg-light">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="sub-title">CLINICAL DEPARTMENTS</span>
+                        <h2>Shifaa Medical Specializations</h2>
+                        <p>Organize appointments across key medical departments with specialized care.</p>
+                    </div>
+                    <div class="grid-4">
+                        <div class="service-card card">
+                            <div class="service-icon-wrapper bg-primary-light text-primary">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <h4>General Consultation</h4>
+                            <p>Primary health evaluations, routine wellness checks, and preventative care.</p>
+                        </div>
+                        <div class="service-card card">
+                            <div class="service-icon-wrapper bg-danger-light text-danger">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <h4>Cardiology Unit</h4>
+                            <p>ECG testing, heart disease screening, and advanced cardiovascular care.</p>
+                        </div>
+                        <div class="service-card card">
+                            <div class="service-icon-wrapper bg-warning-light text-warning">
+                                <i class="fa-solid fa-bone"></i>
+                            </div>
+                            <h4>Orthopedics Care</h4>
+                            <p>Bone fractures, joint care, physical therapy, and spinal assessments.</p>
+                        </div>
+                        <div class="service-card card">
+                            <div class="service-icon-wrapper bg-success-light text-success">
+                                <i class="fa-solid fa-baby"></i>
+                            </div>
+                            <h4>Pediatrics Care</h4>
+                            <p>Infant checkups, child immunizations, and youth growth tracking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enhanced Features Highlight Split Section -->
+            <section id="features" class="container feature-highlight-section">
+                <div class="split-layout feature-split-card">
+                    <div class="split-content">
+                        <div class="feature-tag-pill">
+                            <i class="fa-solid fa-sliders"></i> FRONT DESK CONTROL
+                        </div>
+                        <h2>Complete Daily Schedule Mastery</h2>
+                        <p class="feature-lead-text">Empower your administrative workflow with intelligent tools built to keep patient queues running smoothly and error-free.</p>
+                        <ul class="check-list">
+                            <li>
+                                <div class="check-icon-wrap"><i class="fa-solid fa-check"></i></div>
+                                <div><strong>Comprehensive Booking:</strong> Capture patient name, specialized department, date, and time.</div>
+                            </li>
+                            <li>
+                                <div class="check-icon-wrap"><i class="fa-solid fa-check"></i></div>
+                                <div><strong>Multi-Filter Search:</strong> Filter instantly by clinical department or specific calendar dates.</div>
+                            </li>
+                            <li>
+                                <div class="check-icon-wrap"><i class="fa-solid fa-check"></i></div>
+                                <div><strong>Safe Deletions:</strong> Cancel bookings with a double-confirmation modal to protect data integrity.</div>
+                            </li>
+                            <li>
+                                <div class="check-icon-wrap"><i class="fa-solid fa-check"></i></div>
+                                <div><strong>Dynamic Badge Tracker:</strong> Live appointment counter calculating upcoming active visits.</div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary btn-lg mt-4 glow-effect" id="launchManagerBottomBtn">
+                            <span>Launch Appointment Manager</span> <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+
+                    <div class="split-visual-wrapper">
+                        <div class="split-glow-accent"></div>
+                        <div class="feature-preview-panel card">
+                            <div class="preview-panel-header">
+                                <div class="d-flex align-center gap-2">
+                                    <div class="live-dot-pulse"></div>
+                                    <strong><i class="fa-solid fa-calendar-week text-primary"></i> Live Schedule Overview</strong>
+                                </div>
+                                <span class="session-badge">Active Session</span>
+                            </div>
+                            <div class="preview-panel-body">
+                                <div class="mini-card feature-mock-item">
+                                    <div class="d-flex justify-between align-center mb-1">
+                                        <span class="badge bg-primary-light text-primary">General Consultation</span>
+                                        <small class="text-muted"><i class="fa-solid fa-clock"></i> 09:00 AM</small>
+                                    </div>
+                                    <div class="d-flex align-center gap-2">
+                                        <div class="mini-avatar">SJ</div>
+                                        <div>
+                                            <strong>Sarah Jenkins</strong>
+                                            <small class="d-block text-muted">Confirmed Appointment</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mini-card feature-mock-item mt-3">
+                                    <div class="d-flex justify-between align-center mb-1">
+                                        <span class="badge bg-danger-light text-danger">Cardiology</span>
+                                        <small class="text-muted"><i class="fa-solid fa-clock"></i> 11:30 AM</small>
+                                    </div>
+                                    <div class="d-flex align-center gap-2">
+                                        <div class="mini-avatar bg-danger">MC</div>
+                                        <div>
+                                            <strong>Michael Chang</strong>
+                                            <small class="d-block text-muted">Confirmed Appointment</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- APPLICATION MANAGER VIEW -->
+        <section id="appView" class="view-section">
+            <div class="container py-4">
+                <!-- Top App Control Banner -->
+                <div class="app-top-banner card mb-4">
+                    <div class="d-flex justify-between align-center flex-wrap gap-3">
+                        <div>
+                            <button class="btn btn-outline btn-sm mb-2" id="backToHomeBtn">
+                                <i class="fa-solid fa-arrow-left"></i> Back to Landing Page
+                            </button>
+                            <h2>Shifaa Clinic Appointment Console</h2>
+                            <p class="text-muted mb-0">Schedule new patient consultations, search active appointments, and prevent double-booking conflicts.</p>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                            <div>
+                                <div class="counter-number" id="upcomingCount">0</div>
+                                <div class="counter-label">Upcoming Appointments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alert Banner -->
+                <div id="appAlert" class="alert-banner d-none" role="alert">
+                    <span id="alertIcon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span id="alertMessage">Notification message goes here.</span>
+                    <button class="alert-close" id="alertCloseBtn">&times;</button>
+                </div>
+
+                <!-- Main Application Dashboard Grid -->
+                <div class="app-grid">
+                    <!-- Booking Form Side Bar -->
+                    <div class="app-column-form">
+                        <div class="card form-card sticky-card">
+                            <div class="card-header">
+                                <h3><i class="fa-solid fa-user-plus text-primary"></i> New Patient Booking</h3>
+                                <p class="text-muted small">Enter patient booking details below.</p>
+                            </div>
+                            <form id="appointmentForm" novalidate>
+                                <div class="form-group">
+                                    <label for="customerName">Patient Full Name <span class="required">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" id="customerName" class="form-control" placeholder="e.g. Dr. Sarah Jenkins" required>
+                                    </div>
+                                    <div class="error-feedback" id="nameError">Please enter a valid patient name.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="serviceType">Clinic Service / Department <span class="required">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <i class="fa-solid fa-stethoscope"></i>
+                                        <select id="serviceType" class="form-control" required>
+                                            <option value="" disabled selected>Select department...</option>
+                                            <option value="General Consultation">General Consultation</option>
+                                            <option value="Cardiology">Cardiology</option>
+                                            <option value="Orthopedics">Orthopedics</option>
+                                            <option value="Pediatrics">Pediatrics</option>
+                                            <option value="Dermatology">Dermatology</option>
+                                            <option value="Neurology">Neurology</option>
+                                        </select>
+                                    </div>
+                                    <div class="error-feedback" id="serviceError">Please select a medical department.</div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="appointmentDate">Date <span class="required">*</span></label>
+                                        <div class="input-icon-wrap">
+                                            <i class="fa-solid fa-calendar-day"></i>
+                                            <input type="date" id="appointmentDate" class="form-control" required>
+                                        </div>
+                                        <div class="error-feedback" id="dateError">Please select today or a future date.</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="appointmentTime">Time <span class="required">*</span></label>
+                                        <div class="input-icon-wrap">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <input type="time" id="appointmentTime" class="form-control" required>
+                                        </div>
+                                        <div class="error-feedback" id="timeError">Please select a valid time slot.</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions mt-3">
+                                    <button type="submit" class="btn btn-primary w-100 glow-effect" id="submitBtn">
+                                        <i class="fa-solid fa-calendar-plus"></i> Book Appointment
+                                    </button>
+                                    <button type="button" class="btn btn-outline w-100 mt-2" id="resetFormBtn">
+                                        Clear Form
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Schedule Main List Panel -->
+                    <div class="app-column-schedule">
+                        <div class="card schedule-card">
+                            <div class="schedule-header-controls">
+                                <div class="d-flex justify-between align-center flex-wrap gap-2 mb-3">
+                                    <h3><i class="fa-solid fa-calendar-days text-primary"></i> Scheduled Consultations</h3>
+                                    <div class="view-toggle-btns">
+                                        <button class="btn-icon active" id="cardViewBtn" title="Card Grid View"><i class="fa-solid fa-grip"></i></button>
+                                        <button class="btn-icon" id="tableViewBtn" title="Table View"><i class="fa-solid fa-table-list"></i></button>
+                                    </div>
+                                </div>
+                                <div class="filter-toolbar">
+                                    <div class="search-box">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Search patient name...">
+                                    </div>
+                                    <div class="filter-dropdowns">
+                                        <select id="filterService" class="form-control">
+                                            <option value="">All Services</option>
+                                            <option value="General Consultation">General Consultation</option>
+                                            <option value="Cardiology">Cardiology</option>
+                                            <option value="Orthopedics">Orthopedics</option>
+                                            <option value="Pediatrics">Pediatrics</option>
+                                            <option value="Dermatology">Dermatology</option>
+                                            <option value="Neurology">Neurology</option>
+                                        </select>
+                                        <input type="date" id="filterDate" class="form-control" title="Filter by specific date">
+                                        <button class="btn btn-outline btn-sm" id="clearFiltersBtn" title="Reset Filters">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appointments-container mt-3">
+                                <!-- Card View Grid -->
+                                <div id="appointmentsCardGrid" class="appointments-grid">
+                                    <!-- Rendered dynamically -->
+                                </div>
+
+                                <!-- Table View -->
+                                <div id="appointmentsTableView" class="table-responsive d-none">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Patient Name</th>
+                                                <th>Department</th>
+                                                <th>Date & Time</th>
+                                                <th>Status</th>
+                                                <th class="text-end">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="appointmentsTableBody">
+                                            <!-- Rendered dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Empty State -->
+                                <div id="emptyState" class="empty-state d-none">
+                                    <div class="empty-icon">
+                                        <i class="fa-solid fa-calendar-xmark"></i>
+                                    </div>
+                                    <h4>No Appointments Found</h4>
+                                    <p class="text-muted">No scheduled appointments match your filter or the schedule is currently empty.</p>
+                                    <button class="btn btn-primary btn-sm mt-2" id="emptyStateResetBtn">Clear Filters / Reset Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Conflict Warning Modal -->
+    <div id="conflictModal" class="modal-overlay d-none">
+        <div class="modal-card card">
+            <div class="modal-header bg-warning-light text-warning">
+                <i class="fa-solid fa-triangle-exclamation fa-2x"></i>
+                <h3>Schedule Conflict Detected</h3>
+            </div>
+            <div class="modal-body">
+                <p>An active appointment is already booked for this exact date and time:</p>
+                <div class="conflict-details p-3 bg-light rounded mb-3" id="conflictDetailsText">
+                    <!-- Dynamic conflict details -->
+                </div>
+                <p class="text-muted small">Please select a different time slot or date to complete booking.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary w-100" id="closeConflictModalBtn">Got it, change time</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal-overlay d-none">
+        <div class="modal-card card">
+            <div class="modal-header text-danger">
+                <i class="fa-solid fa-triangle-exclamation fa-2x"></i>
+                <h3>Cancel Appointment</h3>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to cancel and remove this appointment?</p>
+                <div class="conflict-details p-3 bg-light rounded mb-3" id="deleteDetailsText">
+                    <!-- Dynamic delete details -->
+                </div>
+                <p class="text-danger small"><i class="fa-solid fa-circle-exclamation"></i> This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer d-flex gap-2">
+                <button class="btn btn-outline w-50" id="cancelDeleteBtn">Keep Appointment</button>
+                <button class="btn btn-danger w-50" id="confirmDeleteBtn">Yes, Cancel It</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Multi-Column Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo mb-3">
+                        <div class="logo-badge">
+                            <svg class="logo-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="22" r="14" fill="#E11D48"/>
+                                <circle cx="100" cy="178" r="14" fill="#E11D48"/>
+                                <circle cx="22" cy="100" r="14" fill="#E11D48"/>
+                                <circle cx="178" cy="100" r="14" fill="#E11D48"/>
+                                <path d="M100 45 C 80 45, 65 70, 92 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 92 C 135 70, 120 45, 100 45 Z" fill="#E11D48"/>
+                                <path d="M100 155 C 80 155, 65 130, 92 108 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 108 C 135 130, 120 155, 100 155 Z" fill="#E11D48"/>
+                                <path d="M45 100 C 45 80, 70 65, 92 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 92 108 C 70 135, 45 120, 45 100 Z" fill="#E11D48"/>
+                                <path d="M155 100 C 155 80, 130 65, 108 92 C 100 100, 100 100, 100 100 C 100 100, 100 100, 108 108 C 130 135, 155 120, 155 100 Z" fill="#E11D48"/>
+                            </svg>
+                        </div>
+                        <span class="brand-title">Shifaa <span class="brand-sub">Clinic</span></span>
+                    </div>
+                    <p class="footer-desc">Shifaa Clinic delivers compassionate, world-class healthcare. Empowering staff with modern, error-free consultation scheduling.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home Overview</a></li>
+                        <li><a href="#services">Clinical Departments</a></li>
+                        <li><a href="#features">Manager Capabilities</a></li>
+                        <li><a href="#" id="footerManagerLink">Appointment Console</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">General Medicine</a></li>
+                        <li><a href="#services">Cardiology Unit</a></li>
+                        <li><a href="#services">Orthopedics Care</a></li>
+                        <li><a href="#services">Pediatrics Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact & Hours</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> 124 Health Avenue, Medical Zone</li>
+                        <li><i class="fa-solid fa-phone"></i> +212 (0) 522 00 11 22</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@shifaaclinic.com</li>
+                        <li><i class="fa-solid fa-clock"></i> Mon - Sat: 08:00 AM - 08:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shifaa Clinic. All rights reserved. Built with HTML, CSS & Vanilla JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
